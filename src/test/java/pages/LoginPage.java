@@ -25,20 +25,20 @@ public class LoginPage extends BaseClass {
 	}
 
 	// To enter user name in user name text field
-	public void enterUserName(WebDriver driver, String email) {
-		WebElement userName = driver.findElement(USER_NAME);
+	public void enterName(WebDriver driver, String email) {
+		WebElement name = driver.findElement(USER_NAME);
 		waitForExpectedElement(driver, USER_NAME); // this method called from base class
-		highlightWebElement(driver, userName); // this method called from base class
-		userName.sendKeys(email);
+		highlightWebElement(driver, name); // this method called from base class
+		name.sendKeys(email);
 		//String searchItemData = userName.getAttribute("value");
 	}
 	
 	// To enter password in password text field
-	public void enterUserPassword(WebDriver driver, String password) {
-		WebElement userPassword = driver.findElement(PASSWORD);
+	public void enterPassword(WebDriver driver, String pswd) {
+		WebElement password = driver.findElement(PASSWORD);
 		waitForExpectedElement(driver, PASSWORD);
-		highlightWebElement(driver, userPassword);
-		userPassword.sendKeys(password);
+		highlightWebElement(driver, password);
+		password.sendKeys(pswd);
 		//String searchItemData = userName.getAttribute("value");
 	}
 	

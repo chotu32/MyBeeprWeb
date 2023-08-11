@@ -5,12 +5,16 @@
       {
         "name": "I click on Sign in button",
         "aggregatedDurations": {
-          "average": 2.1187994,
-          "median": 2.1187994
+          "average": 2.1349554,
+          "median": 2.1349554
         },
         "durations": [
           {
-            "duration": 2.1187994,
+            "duration": 2.1331511,
+            "location": "AdminLogin.feature:8"
+          },
+          {
+            "duration": 2.1367597,
             "location": "UserLogin.feature:8"
           }
         ]
@@ -23,12 +27,12 @@
       {
         "name": "I enter user \"validAdminName\"",
         "aggregatedDurations": {
-          "average": 2.174043,
-          "median": 2.174043
+          "average": 2.3766815,
+          "median": 2.3766815
         },
         "durations": [
           {
-            "duration": 2.174043,
+            "duration": 2.3766815,
             "location": "AdminLogin.feature:6"
           }
         ]
@@ -36,12 +40,12 @@
       {
         "name": "I enter user \"validUserName\"",
         "aggregatedDurations": {
-          "average": 2.1661244,
-          "median": 2.1661244
+          "average": 2.1922996,
+          "median": 2.1922996
         },
         "durations": [
           {
-            "duration": 2.1661244,
+            "duration": 2.1922996,
             "location": "UserLogin.feature:6"
           }
         ]
@@ -54,16 +58,16 @@
       {
         "name": "I navigate to \"url\"",
         "aggregatedDurations": {
-          "average": 20.7426421,
-          "median": 20.7426421
+          "average": 9.41279505,
+          "median": 9.41279505
         },
         "durations": [
           {
-            "duration": 28.4981494,
+            "duration": 9.5722907,
             "location": "AdminLogin.feature:5"
           },
           {
-            "duration": 12.9871348,
+            "duration": 9.2532994,
             "location": "UserLogin.feature:5"
           }
         ]
@@ -76,12 +80,16 @@
       {
         "name": "I navigate to dashboard page",
         "aggregatedDurations": {
-          "average": 10.1753087,
-          "median": 10.1753087
+          "average": 10.1758055,
+          "median": 10.1758055
         },
         "durations": [
           {
-            "duration": 10.1753087,
+            "duration": 10.1750587,
+            "location": "AdminLogin.feature:9"
+          },
+          {
+            "duration": 10.1765523,
             "location": "UserLogin.feature:9"
           }
         ]
@@ -94,12 +102,16 @@
       {
         "name": "I close browser instance",
         "aggregatedDurations": {
-          "average": 0.2199547,
-          "median": 0.2199547
+          "average": 0.2905946,
+          "median": 0.2905946
         },
         "durations": [
           {
-            "duration": 0.2199547,
+            "duration": 0.393434,
+            "location": "AdminLogin.feature:10"
+          },
+          {
+            "duration": 0.1877552,
             "location": "UserLogin.feature:10"
           }
         ]
@@ -110,18 +122,27 @@
     "source": "^I enter pswd \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I enter pswd \"validPassword\"",
+        "name": "I enter pswd \"validAdminPassword\"",
         "aggregatedDurations": {
-          "average": 2.14061365,
-          "median": 2.14061365
+          "average": 2.180876,
+          "median": 2.180876
         },
         "durations": [
           {
-            "duration": 2.1378392,
+            "duration": 2.180876,
             "location": "AdminLogin.feature:7"
-          },
+          }
+        ]
+      },
+      {
+        "name": "I enter pswd \"validUserPassword\"",
+        "aggregatedDurations": {
+          "average": 2.1889832,
+          "median": 2.1889832
+        },
+        "durations": [
           {
-            "duration": 2.1433881,
+            "duration": 2.1889832,
             "location": "UserLogin.feature:7"
           }
         ]

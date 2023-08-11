@@ -1,43 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="65.826137">
-    <testcase classname="MyBeepr Web-Login for admin" name="Verify login functionality of MyBeepr" time="36.015085">
-        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-asc-c161=&quot;&quot; type=&quot;submit&quot; class=&quot;btn btn-outline-secondary mybeepr-btn-default-login&quot; disabled=&quot;&quot; style=&quot;border: 2px solid white;&quot;&gt;...&lt;/button&gt; is not clickable at point (165, 367). Other element would receive the click: &lt;div _ngcontent-asc-c161=&quot;&quot; class=&quot;col-md-12&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=115.0.5790.171)&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'LAPTOP-60BNE173', ip: '192.168.55.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923}), userDataDir=C:\Users\lenovo\AppData\Local\Temp\scoped_dir13300_409151955}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:61087}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=115.0.5790.171, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: a4b95003b130d1b248cf7d502cf6c896&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;&#10;&#9;at pages.LoginPage.clickSignInBtn(LoginPage.java:50)&#13;&#10;&#9;at stepdef.MyBeeprWebStepDef.i_click_on_Sign_in_button(MyBeeprWebStepDef.java:66)&#13;&#10;&#9;at ✽.And I click on Sign in button(AdminLogin.feature:8)&#13;&#10;"><![CDATA[Given I navigate to "url"...................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="52.991719">
+    <testcase classname="MyBeepr Web-Login for admin" name="Verify MyBeepr login functionality by using user credentials" time="26.855772">
+        <system-out><![CDATA[Given I navigate to "url"...................................................passed
 When I enter user "validAdminName"..........................................passed
-And I enter pswd "validPassword"............................................passed
-And I click on Sign in button...............................................failed
-Then I navigate to dashboard page...........................................skipped
-Then I close browser instance...............................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-asc-c161="" type="submit" class="btn btn-outline-secondary mybeepr-btn-default-login" disabled="" style="border: 2px solid white;">...</button> is not clickable at point (165, 367). Other element would receive the click: <div _ngcontent-asc-c161="" class="col-md-12">...</div>
-  (Session info: chrome=115.0.5790.171)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'LAPTOP-60BNE173', ip: '192.168.55.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923}), userDataDir=C:\Users\lenovo\AppData\Local\Temp\scoped_dir13300_409151955}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:61087}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=115.0.5790.171, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: a4b95003b130d1b248cf7d502cf6c896
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at pages.LoginPage.clickSignInBtn(LoginPage.java:50)
-	at stepdef.MyBeeprWebStepDef.i_click_on_Sign_in_button(MyBeeprWebStepDef.java:66)
-	at ✽.And I click on Sign in button(AdminLogin.feature:8)
-]]></failure>
+And I enter pswd "validAdminPassword".......................................passed
+And I click on Sign in button...............................................passed
+Then I navigate to dashboard page...........................................passed
+Then I close browser instance...............................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="MyBeepr Web-Login for user" name="Verify login functionality of MyBeepr" time="29.811052">
+    <testcase classname="MyBeepr Web-Login for user" name="Verify MyBeepr login functionality by using admin credentials" time="26.135947">
         <system-out><![CDATA[Given I navigate to "url"...................................................passed
 When I enter user "validUserName"...........................................passed
-And I enter pswd "validPassword"............................................passed
+And I enter pswd "validUserPassword"........................................passed
 And I click on Sign in button...............................................passed
 Then I navigate to dashboard page...........................................passed
 Then I close browser instance...............................................passed

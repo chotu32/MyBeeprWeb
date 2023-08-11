@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="utilities.BaseClass">
+      <class name="stepdef.MyBeeprWebStepDef">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- utilities.BaseClass -->
+      </class> <!-- stepdef.MyBeeprWebStepDef -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

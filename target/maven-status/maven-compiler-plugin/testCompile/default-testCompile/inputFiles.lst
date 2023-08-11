@@ -1,6 +1,6 @@
-F:\workspace-1111\MyBeepr\src\test\java\pages\LoginPage.java
-F:\workspace-1111\MyBeepr\src\test\java\utilities\BaseClass.java
-F:\workspace-1111\MyBeepr\src\test\java\utilities\Utilities.java
-F:\workspace-1111\MyBeepr\src\test\java\utilities\ConfigClass.java
-F:\workspace-1111\MyBeepr\src\test\java\stepdef\MyBeeprWebStepDef.java
-F:\workspace-1111\MyBeepr\src\test\java\runner\TestRunner.java
+F:\workspace-1111\MyBeeprWeb\src\test\java\utilities\ConfigClass.java
+F:\workspace-1111\MyBeeprWeb\src\test\java\stepdef\MyBeeprWebStepDef.java
+F:\workspace-1111\MyBeeprWeb\src\test\java\utilities\Utilities.java
+F:\workspace-1111\MyBeeprWeb\src\test\java\utilities\BaseClass.java
+F:\workspace-1111\MyBeeprWeb\src\test\java\pages\LoginPage.java
+F:\workspace-1111\MyBeeprWeb\src\test\java\runner\TestRunner.java

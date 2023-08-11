@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 			features = "./Features", 
 			//tags = {"@001, @002, @003"},
-			tags = {"@user"},
+			tags = {"@admin, @user"},
 			glue={"stepdef"}, 
 			monochrome=true, 
 			plugin = { "pretty", "html:target/Cucumber-html-report", "usage:target/cucumber-usage.json", "junit:target/" + "Testing.xml" }

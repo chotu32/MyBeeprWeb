@@ -1,7 +1,7 @@
 Feature: MyBeepr Web-Login for admin
 
   @admin
-  Scenario Outline: Verify login functionality of MyBeepr
+  Scenario Outline: Verify MyBeepr login functionality by using user credentials
     Given I navigate to "<url>"
     When I enter user "<userName>"
     And I enter pswd "<passoword>"
@@ -10,5 +10,5 @@ Feature: MyBeepr Web-Login for admin
     Then I close browser instance
 
     Examples: 
-      | url | userName       | passoword     |
-      | url | validAdminName | validPassword |
+      | url | userName       | passoword          |
+      | url | validAdminName | validAdminPassword |

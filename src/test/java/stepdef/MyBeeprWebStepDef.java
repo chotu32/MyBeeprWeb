@@ -2,6 +2,7 @@ package stepdef;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
@@ -31,8 +32,6 @@ public class MyBeeprWebStepDef extends BaseClass {
 		LoginPage objLP = new LoginPage(driver);
 		Scenario scenario;
 
-		static float sortByValue;
-
 		@Before
 		public void start(Scenario scenario) throws Exception {
 			this.scenario = scenario;
@@ -50,20 +49,28 @@ public class MyBeeprWebStepDef extends BaseClass {
 	@When("^I enter user \"([^\"]*)\"$")
 	public void i_enter_user(String userName) throws Throwable {
 		System.out.println("User Name: " + userName);
-		objLP.enterUserName(driver, config.getProperty(userName));
+		if(userName.contains("validUser"))
+			test = utilities.reportsFile("MyBeepr - Login Page verify with valid user credentials");
+		else {
+			test = utilities.reportsFile("MyBeepr - Login Page verify with valid admin credentials");
+		}
+		objLP.enterName(driver, config.getProperty(userName));
+		test.log(LogStatus.INFO, "Entered name: " + config.getProperty(userName));
 		System.out.println("User Name: " + config.getProperty(userName));
 	}
 
 	@When("^I enter pswd \"([^\"]*)\"$")
 	public void i_enter_pswd(String password) throws Throwable {
 		System.out.println("User Password: " + password);
-		objLP.enterUserPassword(driver, config.getProperty(password));
+		objLP.enterPassword(driver, config.getProperty(password));
+		test.log(LogStatus.INFO, "Entered password: " + config.getProperty(password));
 		System.out.println("User Password: " + config.getProperty(password));
 	}
 
 	@When("^I click on Sign in button$")
 	public void i_click_on_Sign_in_button() throws Throwable {
 		objLP.clickSignInBtn(driver);
+		test.log(LogStatus.PASS, "Clicked on SignInButton");
 	}
 
 	@Then("^I navigate to dashboard page$")
@@ -80,6 +87,7 @@ public class MyBeeprWebStepDef extends BaseClass {
 	@Then("^I close browser instance$")
 	public void i_close_browser_instance() throws Throwable {
 		objLP.closeBrowserInstance(driver);
+		utilities.endReport();
 	}
 
 }
