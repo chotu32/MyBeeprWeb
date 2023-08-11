@@ -1,0 +1,131 @@
+[
+  {
+    "source": "^I click on Sign in button$",
+    "steps": [
+      {
+        "name": "I click on Sign in button",
+        "aggregatedDurations": {
+          "average": 2.1187994,
+          "median": 2.1187994
+        },
+        "durations": [
+          {
+            "duration": 2.1187994,
+            "location": "UserLogin.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter user \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter user \"validAdminName\"",
+        "aggregatedDurations": {
+          "average": 2.174043,
+          "median": 2.174043
+        },
+        "durations": [
+          {
+            "duration": 2.174043,
+            "location": "AdminLogin.feature:6"
+          }
+        ]
+      },
+      {
+        "name": "I enter user \"validUserName\"",
+        "aggregatedDurations": {
+          "average": 2.1661244,
+          "median": 2.1661244
+        },
+        "durations": [
+          {
+            "duration": 2.1661244,
+            "location": "UserLogin.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I navigate to \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I navigate to \"url\"",
+        "aggregatedDurations": {
+          "average": 20.7426421,
+          "median": 20.7426421
+        },
+        "durations": [
+          {
+            "duration": 28.4981494,
+            "location": "AdminLogin.feature:5"
+          },
+          {
+            "duration": 12.9871348,
+            "location": "UserLogin.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I navigate to dashboard page$",
+    "steps": [
+      {
+        "name": "I navigate to dashboard page",
+        "aggregatedDurations": {
+          "average": 10.1753087,
+          "median": 10.1753087
+        },
+        "durations": [
+          {
+            "duration": 10.1753087,
+            "location": "UserLogin.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I close browser instance$",
+    "steps": [
+      {
+        "name": "I close browser instance",
+        "aggregatedDurations": {
+          "average": 0.2199547,
+          "median": 0.2199547
+        },
+        "durations": [
+          {
+            "duration": 0.2199547,
+            "location": "UserLogin.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter pswd \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter pswd \"validPassword\"",
+        "aggregatedDurations": {
+          "average": 2.14061365,
+          "median": 2.14061365
+        },
+        "durations": [
+          {
+            "duration": 2.1378392,
+            "location": "AdminLogin.feature:7"
+          },
+          {
+            "duration": 2.1433881,
+            "location": "UserLogin.feature:7"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+stepdef\MyBeeprWebStepDef.class
+utilities\ConfigClass.class
+utilities\Utilities.class
+pages\LoginPage.class
+runner\TestRunner.class
+utilities\BaseClass.class
