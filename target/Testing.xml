@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="52.991719">
-    <testcase classname="MyBeepr Web-Login for admin" name="Verify MyBeepr login functionality by using user credentials" time="26.855772">
-        <system-out><![CDATA[Given I navigate to "url"...................................................passed
-When I enter user "validAdminName"..........................................passed
-And I enter pswd "validAdminPassword".......................................passed
-And I click on Sign in button...............................................passed
-Then I navigate to dashboard page...........................................passed
-Then I close browser instance...............................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="MyBeepr Web-Login for user" name="Verify MyBeepr login functionality by using admin credentials" time="26.135947">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="91.29144">
+    <testcase classname="MyBeepr Web Login and Logout for user" name="Verify MyBeepr login and logout functionality by using user credentials" time="91.29144">
         <system-out><![CDATA[Given I navigate to "url"...................................................passed
 When I enter user "validUserName"...........................................passed
 And I enter pswd "validUserPassword"........................................passed
+And I click on show label...................................................passed
 And I click on Sign in button...............................................passed
-Then I navigate to dashboard page...........................................passed
+Then I verify the user credentials..........................................passed
+When I click on user profile................................................passed
+And I click on Sign Out button..............................................passed
+And I click on Cancel button................................................passed
+Then I verify the current page..............................................passed
+When I click on user profile................................................passed
+And I click on Sign Out button..............................................passed
+And I click on Current Organisation button..................................passed
 Then I close browser instance...............................................passed
 ]]></system-out>
     </testcase>

@@ -5,17 +5,31 @@
       {
         "name": "I click on Sign in button",
         "aggregatedDurations": {
-          "average": 2.1349554,
-          "median": 2.1349554
+          "average": 3.0344942,
+          "median": 3.0344942
         },
         "durations": [
           {
-            "duration": 2.1331511,
-            "location": "AdminLogin.feature:8"
-          },
+            "duration": 3.0344942,
+            "location": "UserLoginAndLogout.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I verify the current page$",
+    "steps": [
+      {
+        "name": "I verify the current page",
+        "aggregatedDurations": {
+          "average": 2.3604389,
+          "median": 2.3604389
+        },
+        "durations": [
           {
-            "duration": 2.1367597,
-            "location": "UserLogin.feature:8"
+            "duration": 2.3604389,
+            "location": "UserLoginAndLogout.feature:14"
           }
         ]
       }
@@ -25,28 +39,15 @@
     "source": "^I enter user \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I enter user \"validAdminName\"",
-        "aggregatedDurations": {
-          "average": 2.3766815,
-          "median": 2.3766815
-        },
-        "durations": [
-          {
-            "duration": 2.3766815,
-            "location": "AdminLogin.feature:6"
-          }
-        ]
-      },
-      {
         "name": "I enter user \"validUserName\"",
         "aggregatedDurations": {
-          "average": 2.1922996,
-          "median": 2.1922996
+          "average": 3.7613424,
+          "median": 3.7613424
         },
         "durations": [
           {
-            "duration": 2.1922996,
-            "location": "UserLogin.feature:6"
+            "duration": 3.7613424,
+            "location": "UserLoginAndLogout.feature:6"
           }
         ]
       }
@@ -58,39 +59,93 @@
       {
         "name": "I navigate to \"url\"",
         "aggregatedDurations": {
-          "average": 9.41279505,
-          "median": 9.41279505
+          "average": 17.4089652,
+          "median": 17.4089652
         },
         "durations": [
           {
-            "duration": 9.5722907,
-            "location": "AdminLogin.feature:5"
-          },
-          {
-            "duration": 9.2532994,
-            "location": "UserLogin.feature:5"
+            "duration": 17.4089652,
+            "location": "UserLoginAndLogout.feature:5"
           }
         ]
       }
     ]
   },
   {
-    "source": "^I navigate to dashboard page$",
+    "source": "^I click on user profile$",
     "steps": [
       {
-        "name": "I navigate to dashboard page",
+        "name": "I click on user profile",
         "aggregatedDurations": {
-          "average": 10.1758055,
-          "median": 10.1758055
+          "average": 4.569362,
+          "median": 4.569362
         },
         "durations": [
           {
-            "duration": 10.1750587,
-            "location": "AdminLogin.feature:9"
+            "duration": 4.5680183,
+            "location": "UserLoginAndLogout.feature:11"
           },
           {
-            "duration": 10.1765523,
-            "location": "UserLogin.feature:9"
+            "duration": 4.5707057,
+            "location": "UserLoginAndLogout.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Current Organisation button$",
+    "steps": [
+      {
+        "name": "I click on Current Organisation button",
+        "aggregatedDurations": {
+          "average": 6.8134823,
+          "median": 6.8134823
+        },
+        "durations": [
+          {
+            "duration": 6.8134823,
+            "location": "UserLoginAndLogout.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on show label$",
+    "steps": [
+      {
+        "name": "I click on show label",
+        "aggregatedDurations": {
+          "average": 2.6299945,
+          "median": 2.6299945
+        },
+        "durations": [
+          {
+            "duration": 2.6299945,
+            "location": "UserLoginAndLogout.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Sign Out button$",
+    "steps": [
+      {
+        "name": "I click on Sign Out button",
+        "aggregatedDurations": {
+          "average": 2.60028895,
+          "median": 2.60028895
+        },
+        "durations": [
+          {
+            "duration": 2.5693429,
+            "location": "UserLoginAndLogout.feature:12"
+          },
+          {
+            "duration": 2.631235,
+            "location": "UserLoginAndLogout.feature:16"
           }
         ]
       }
@@ -102,17 +157,13 @@
       {
         "name": "I close browser instance",
         "aggregatedDurations": {
-          "average": 0.2905946,
-          "median": 0.2905946
+          "average": 0.4682131,
+          "median": 0.4682131
         },
         "durations": [
           {
-            "duration": 0.393434,
-            "location": "AdminLogin.feature:10"
-          },
-          {
-            "duration": 0.1877552,
-            "location": "UserLogin.feature:10"
+            "duration": 0.4682131,
+            "location": "UserLoginAndLogout.feature:18"
           }
         ]
       }
@@ -122,28 +173,51 @@
     "source": "^I enter pswd \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I enter pswd \"validAdminPassword\"",
-        "aggregatedDurations": {
-          "average": 2.180876,
-          "median": 2.180876
-        },
-        "durations": [
-          {
-            "duration": 2.180876,
-            "location": "AdminLogin.feature:7"
-          }
-        ]
-      },
-      {
         "name": "I enter pswd \"validUserPassword\"",
         "aggregatedDurations": {
-          "average": 2.1889832,
-          "median": 2.1889832
+          "average": 2.8662646,
+          "median": 2.8662646
         },
         "durations": [
           {
-            "duration": 2.1889832,
-            "location": "UserLogin.feature:7"
+            "duration": 2.8662646,
+            "location": "UserLoginAndLogout.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Cancel button$",
+    "steps": [
+      {
+        "name": "I click on Cancel button",
+        "aggregatedDurations": {
+          "average": 2.6781266,
+          "median": 2.6781266
+        },
+        "durations": [
+          {
+            "duration": 2.6781266,
+            "location": "UserLoginAndLogout.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I verify the user credentials$",
+    "steps": [
+      {
+        "name": "I verify the user credentials",
+        "aggregatedDurations": {
+          "average": 34.8989751,
+          "median": 34.8989751
+        },
+        "durations": [
+          {
+            "duration": 34.8989751,
+            "location": "UserLoginAndLogout.feature:10"
           }
         ]
       }
